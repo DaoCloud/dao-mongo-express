@@ -1,10 +1,10 @@
-# mongo-express
+# Mongo Express
 
-mongo-express是使用Node.js和express实现的轻量级MongoDB管理程序，通过它您可以轻松管理您存储在MongoDB的数据。
+Mongo Express 是使用 Node.js 和 Express 框架实现的轻量级 MongoDB 数据库管理程序，通过它您可以轻松管理您的 MongoDB 数据库。
 
 ## 注意事项
 
-目前该mongo-express镜像不支持授权认证，您启动mongo-express容器后，容器的URL是公开访问的。所以，您使用完毕后请立即“停止”容器，防止MongoDB数据被他人操作。
+目前在 DaoCloud 镜像仓库提供的 Mongo Express 版本不支持授权认证，您启动 Mongo Express 容器后，容器的 URL 是公开访问的。所以在您使用完毕后请立即「停止」容器，防止 MongoDB 数据库被他人操作。
 
 ## 版本
 
@@ -12,6 +12,6 @@ mongo-express是使用Node.js和express实现的轻量级MongoDB管理程序，�
 
 ## 使用说明
 
-* 从最新镜像启动mongo-express容器
-* 绑定一个需要管理的MongoDB服务实例，设置服务别名为“MongoDB”（绑定时的默认值）
-* 启动容器
+1. 从最新镜像启动 mongo-express 容器。
+2. 绑定一个需要管理的 MongoDB 服务实例，设置服务别名为「MongoDB」（不区分大小写）。
+3. 启动容器。
