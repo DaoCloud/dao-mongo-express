@@ -10,8 +10,18 @@ Mongo Express 是使用 Node.js 和 Express 框架实现的轻量级 MongoDB 数
 
 0.20.0
 
-## 使用说明
+## 如何使用这个镜像管理 DaoCloud MongoDB 服务
 
 1. 从最新镜像启动 mongo-express 容器。
 2. 绑定一个需要管理的 MongoDB 服务实例，设置服务别名为「MongoDB」（不区分大小写）。
 3. 启动容器。
+
+## 如何使用这个镜像管理我自己的 MongoDB 数据库
+
+这个镜像在启动时依赖于下面几个环境变量来配置 MongoDB 数据库连接
+
+1. 「MONGODB_PORT_27017_TCP_ADDR」  MongoDB 数据库 IP
+2. 「MONGODB_PORT_27017_TCP_PORT」  MongoDB 数据库端口
+3. 「MONGODB_INSTANCE_NAME」  MongoDB 数据库名称
+4. 「MONGODB_USERNAME」  MongoDB 数据库用户名
+3. 「MONGODB_PASSWORD」  MongoDB 数据库密码
